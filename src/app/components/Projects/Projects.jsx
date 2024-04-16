@@ -13,22 +13,22 @@ const Projects = () => {
     {
       title: "Marseille",
       src: "salar_de_atacama.jpg",
-      link: "/",
+      link: "/marseille",
     },
     {
       title: "Nice",
       src: "valle_de_la_muerte.jpeg",
-      link: "/",
+      link: "/nice",
     },
     {
       title: "Lille",
       src: "miniques_lagoon.jpg",
-      link: "/",
+      link: "/lille",
     },
     {
       title: "Paris",
       src: "miscani_lake.jpeg",
-      link: "/",
+      link: "/paris",
     },
   ];
 
