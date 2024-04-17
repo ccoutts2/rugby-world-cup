@@ -1,0 +1,43 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.locations {
+  height: 100vh;
+  margin-bottom: 10vh;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+  cursor: none;
+
+  .locationsContainer {
+    position: absolute;
+    @include flex(column, center, center);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+    p {
+      color: white;
+      font-size: 6vh;
+      cursor: none;
+      text-transform: uppercase;
+    }
+  }
+
+  .vignette {
+    height: 40vh;
+    width: 20vw;
+    position: fixed;
+    top: 0;
+    border-radius: 1.5vw;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      filter: opacity(80%);
+    }
+  }
+}
