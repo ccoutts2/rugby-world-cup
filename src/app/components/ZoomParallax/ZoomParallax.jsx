@@ -50,6 +50,7 @@ const ZoomParallax = () => {
       scale: scale4,
     },
   ];
+
   return (
     <div ref={container} className={styles.container}>
       <div className={styles.sticky}>

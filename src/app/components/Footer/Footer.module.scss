@@ -10,6 +10,8 @@
   margin-bottom: 10vh;
   height: 40vh;
   @include flex(row, center, center);
+  border-top: 1vh solid white;
+  padding-top: 10vh;
 
   .body {
     width: 40%;
