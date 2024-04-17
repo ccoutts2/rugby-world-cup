@@ -12,22 +12,22 @@ const Projects = () => {
   const projects = [
     {
       title: "Marseille",
-      src: "salar_de_atacama.jpg",
+      src: "nice4.JPG",
       link: "/marseille",
     },
     {
       title: "Nice",
-      src: "valle_de_la_muerte.jpeg",
+      src: "nice5.JPG",
       link: "/nice",
     },
     {
       title: "Lille",
-      src: "miniques_lagoon.jpg",
+      src: "nice7.JPG",
       link: "/lille",
     },
     {
       title: "Paris",
-      src: "miscani_lake.jpeg",
+      src: "nice9.JPG",
       link: "/paris",
     },
   ];
@@ -38,8 +38,9 @@ const Projects = () => {
       ScrollTrigger.create({
         trigger: imageContainer.current,
         start: "-=100px",
-        end: document.body.offsetHeight,
+        end: "+=725px",
         pin: true,
+        marker: true,
       });
     });
 
@@ -58,16 +59,33 @@ const Projects = () => {
         </div>
         <div className={styles.column}>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, optio
-            facere. Quibusdam dolorum
+            amidst the bustling streets of the city, we explore, where dreams
+            intertwine and stories galore. laughter and music fill the evening air,
+            as memories weave, beyond compare.
           </p>
         </div>
+        {/* <div className={styles.mask}>
+          <p>
+            from quaint villages to coastal shores, we journey on, where adventure
+            soars. friends united, in tales of old, where each moment sparkles,
+            bright as gold.
+          </p>
+        </div> */}
+
         <div className={styles.column}>
           <p>
-            vitae optio sapiente minus blanditiis sunt necessitatibus magni deserunt
-            impedit temporibus natus consequatur!
+            from parisian cafes to lille&apos;s embrace, we chase the thrill of the
+            game, in every space. friends bound by love, in this timeless fold, where
+            memories bloom, in stories untold.
           </p>
         </div>
+        {/* <div className={styles.mask}>
+          <p>
+            amidst the vineyards and cobblestone streets, we wander, souls entwined
+            in france&apos;s heartbeat. laughter and cheers mingle in the air, as
+            rugby&apos;s spirit ignites everywhere.
+          </p>
+        </div> */}
       </div>
       <div className={styles.projectList}>
         {projects.map((project, index) => {

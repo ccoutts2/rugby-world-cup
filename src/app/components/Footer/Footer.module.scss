@@ -1,0 +1,54 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.footer {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  height: 40vh;
+  @include flex(row, center, center);
+
+  .body {
+    width: 40%;
+    color: white;
+
+    .link {
+      text-decoration: none;
+      color: white;
+      margin: 0px;
+
+      &:nth-of-type(1) {
+        display: inline-flex;
+        right: -35px;
+        position: relative;
+      }
+
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        display: inline-flex;
+      }
+
+      &:nth-of-type(3) {
+        right: -35px;
+        position: relative;
+      }
+    }
+
+    // .introLine:nth-of-type(1) {
+    //   display: inline-flex;
+    // }
+
+    .introLine {
+      @include flex(row, space-between, stretch);
+      font-size: 3.5vw;
+      text-transform: uppercase;
+    }
+
+    .introLine p {
+      margin: 0px;
+    }
+  }
+}

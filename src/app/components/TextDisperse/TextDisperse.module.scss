@@ -1,0 +1,36 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.introLine {
+  @include flex(row, space-between, stretch);
+  font-size: 3.5vw;
+  text-transform: uppercase;
+}
+
+.introLine p {
+  margin: 0px;
+}
+
+.introLine:nth-of-type(4),
+.introLine:nth-of-type(5) {
+  display: inline-flex;
+}
+
+.introLine:nth-of-type(5) {
+  right: -35px;
+  position: relative;
+}
+
+.introLine:nth-of-type(6),
+.introLine:nth-of-type(7) {
+  display: inline-flex;
+}
+
+.introLine:nth-of-type(7) {
+  right: -49px;
+  position: relative;
+}

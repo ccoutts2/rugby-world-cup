@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import Intro from "./components/Intro/Intro";
 import Description from "./components/Description/Description";
 import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -18,7 +19,7 @@ export default function Home() {
       <Intro />
       <Description />
       <Projects />
-      <div className={styles.spacer2}></div>
+      <Footer />
     </main>
   );
 }

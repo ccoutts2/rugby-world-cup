@@ -4,11 +4,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const phrases = [
-  "Los Flamencos National Reserve",
-  "is a nature reserve located",
-  "in the commune of San Pedro de Atacama",
-  "The reserve covers a total area",
-  "of 740 square kilometres (290 sq mi)",
+  "this is a photo gallery of my time in france",
+  "for the rugby world cup",
+  "spanning 2 months of travelling",
+  "with my best friends",
 ];
 
 const Description = () => {
