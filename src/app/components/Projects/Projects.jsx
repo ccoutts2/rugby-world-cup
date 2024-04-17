@@ -1,3 +1,4 @@
+"useclient";
 import styles from "./Projects.module.scss";
 import React, { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
@@ -57,6 +58,7 @@ const Projects = () => {
             alt="${title}"
           />
         </div>
+
         <div className={styles.column}>
           <p>
             amidst the bustling streets of the city, we explore, where dreams
@@ -64,13 +66,6 @@ const Projects = () => {
             as memories weave, beyond compare.
           </p>
         </div>
-        {/* <div className={styles.mask}>
-          <p>
-            from quaint villages to coastal shores, we journey on, where adventure
-            soars. friends united, in tales of old, where each moment sparkles,
-            bright as gold.
-          </p>
-        </div> */}
 
         <div className={styles.column}>
           <p>
@@ -79,13 +74,6 @@ const Projects = () => {
             memories bloom, in stories untold.
           </p>
         </div>
-        {/* <div className={styles.mask}>
-          <p>
-            amidst the vineyards and cobblestone streets, we wander, souls entwined
-            in france&apos;s heartbeat. laughter and cheers mingle in the air, as
-            rugby&apos;s spirit ignites everywhere.
-          </p>
-        </div> */}
       </div>
       <div className={styles.projectList}>
         {projects.map((project, index) => {
