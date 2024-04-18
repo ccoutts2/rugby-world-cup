@@ -11,7 +11,7 @@ const ZoomParallax = ({ pictures, container }) => {
         {pictures.map(({ src, scale }, index) => (
           <motion.div style={{ scale: scale }} className={styles.el} key={index}>
             <div className={styles.imageContainer}>
-              <Image src={src} fill={true} alt="nice" />
+              <Image src={src} fill={true} alt="shot of city" />
             </div>
           </motion.div>
         ))}

@@ -13,8 +13,8 @@ const Projects = () => {
   const projects = [
     {
       title: "Marseille",
-      handle: "nice",
-      src: "nice4.JPG",
+      handle: "marseille",
+      src: "intro.JPG",
       link: "/marseille",
     },
     {

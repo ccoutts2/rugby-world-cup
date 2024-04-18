@@ -23,9 +23,11 @@ const Footer = () => {
           <p>dev</p>
         </div>
 
-        <TextDisperse>
-          <p>→email</p>
-        </TextDisperse>
+        <Link className={styles.link} href="mailto:chris.dcoutts@gmail.com">
+          <TextDisperse>
+            <p>→email</p>
+          </TextDisperse>
+        </Link>
 
         <Link
           className={styles.link}
