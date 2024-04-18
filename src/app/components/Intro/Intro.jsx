@@ -33,7 +33,7 @@ export default function Intro() {
     <div className={styles.introContainer}>
       <div className={styles.backgroundImage} ref={background}>
         <Image
-          src={"/assets/images/nice10.JPG"}
+          src={"/assets/images/nice/nice10.JPG"}
           fill={true}
           alt="background image"
           priority={true}
@@ -46,7 +46,7 @@ export default function Intro() {
           data-scroll-speed="0.3"
           className={styles.introImage}>
           <Image
-            src={"/assets/images/nice13.JPG"}
+            src={"/assets/images/nice/nice13.JPG"}
             alt="intro image"
             fill={true}
             priority={true}

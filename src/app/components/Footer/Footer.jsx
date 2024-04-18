@@ -15,12 +15,12 @@ const Footer = () => {
 
         <div className={styles.introLine}>
           <p>software</p>
-          <p>dev</p>
+          <p>&</p>
         </div>
 
         <div className={styles.introLine}>
-          <p>&</p>
-          <p>artistic</p>
+          <p>creative</p>
+          <p>dev</p>
         </div>
 
         <TextDisperse>

@@ -25,7 +25,7 @@ const Locations = ({ mousePosition, images }) => {
       </div>
       <motion.div className={styles.vignette} style={{ x, y }}>
         <Image
-          src={`/assets/images/${images[index].srcBackground}`}
+          src={`/assets/images/${images[index].city}/${images[index].srcBackground}`}
           fill={true}
           alt={images.title}
         />

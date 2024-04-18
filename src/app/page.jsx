@@ -1,7 +1,7 @@
 "use client";
 import styles from "./page.module.scss";
 import React, { useEffect } from "react";
-import Cursor from "./components/Cursor/Cursor";
+// import Cursor from "./components/Cursor/Cursor";
 import Intro from "./components/Intro/Intro";
 import Description from "./components/Description/Description";
 import Projects from "./components/Projects/Projects";
@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Cursor />
+      {/* <Cursor /> */}
       <Intro />
       <Description />
       <Projects />

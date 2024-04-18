@@ -1,7 +1,12 @@
 .cursor {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: #ec4e39;
   position: fixed;
+}
+
+.clicked {
+  @extend .cursor;
+  background-color: blue;
 }

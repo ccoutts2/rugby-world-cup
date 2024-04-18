@@ -1,10 +1,10 @@
 "use client";
 import styles from "./Cursor.module.scss";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
 const Cursor = () => {
-  const cursorSize = 30;
+  const cursorSize = 20;
 
   const mouse = {
     x: useMotionValue(0),
@@ -23,17 +23,31 @@ const Cursor = () => {
     mouse.y.set(clientY - cursorSize / 2);
   };
 
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleMouseDown = () => {
+    setIsClicked(true);
+  };
+
+  const handleMouseUp = () => {
+    setIsClicked(false);
+  };
+
   useEffect(() => {
     window.addEventListener("mousemove", manageMouseMove);
+    window.addEventListener("mousedown", handleMouseDown);
+    window.addEventListener("mouseup", handleMouseUp);
     return () => {
       window.removeEventListener("mousemove", manageMouseMove);
+      window.removeEventListener("mousedown", handleMouseDown);
+      window.removeEventListener("mouseup", handleMouseUp);
     };
   }, []);
 
   return (
     <motion.div
       style={{ left: smoothMouse.x, top: smoothMouse.y }}
-      className={styles.cursor}></motion.div>
+      className={`${styles.cursor} ${isClicked ? styles.clicked : ""}`}></motion.div>
   );
 };
 

@@ -13,22 +13,26 @@ const Projects = () => {
   const projects = [
     {
       title: "Marseille",
+      handle: "nice",
       src: "nice4.JPG",
       link: "/marseille",
     },
     {
       title: "Nice",
-      src: "nice5.JPG",
+      handle: "nice",
+      src: "intro.JPG",
       link: "/nice",
     },
     {
       title: "Lille",
-      src: "nice7.JPG",
+      handle: "lille",
+      src: "intro.JPG",
       link: "/lille",
     },
     {
       title: "Paris",
-      src: "nice9.JPG",
+      handle: "paris",
+      src: "intro.JPG",
       link: "/paris",
     },
   ];
@@ -53,9 +57,9 @@ const Projects = () => {
       <div className={styles.projectDescription}>
         <div ref={imageContainer} className={styles.imageContainer}>
           <Image
-            src={`/assets/images/${projects[selectedProject].src}`}
+            src={`/assets/images/${projects[selectedProject].handle}/${projects[selectedProject].src}`}
             fill={true}
-            alt="${title}"
+            alt={projects[selectedProject].title}
           />
         </div>
 
