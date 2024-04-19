@@ -35,7 +35,7 @@ const LinkPage = () => {
     <nav className={styles.links}>
       <ul className={styles.list}>
         {projects.map((project) => (
-          <Link href={project.link}>
+          <Link key={project.handle} href={project.link}>
             <li>{project.title}</li>
           </Link>
         ))}
