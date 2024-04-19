@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rugby World Cup 2023 France Gallery
 
-## Getting Started
+## Description
+This project showcases a collection of images captured during my time in France for the Rugby World Cup 2023. I've created a dynamic and immersive image gallery experience, using Next.js. 
 
-First, run the development server:
+Disclaimer - this project was not built for mobile use. In every project I've done, I've always built with a mobile-first approach, however for this specific project I wanted it be to laptop/desktop only, because of the scroll animations implemented.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- **Image Gallery:** Explore a curated selection of photographs capturing memorable moments from the Rugby World Cup 2023 in France.
+- **Immersive Experience:** Users can immerse themselves in the photos with sclaing and a vignette animation. Get a feel for what I witnessed, through the selection of photos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
+To set up the project locally, follow these steps:
+1. Clone the repository: `git clone https://github.com/ccoutts2/rugby-world-cup`
+2. Navigate to the project directory: `cd your-project`
+3. Install dependencies: `npm install` or `yarn install`
+4. Start the development server: `npm run dev` or `yarn dev`
+5. Open your web browser and navigate to `http://localhost:3000` to view the gallery.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
+Once the project is running locally, you can:
+- Browse through the image gallery by scrolling and navigating to the different pages
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contributing
+Contributions to the Rugby World Cup 2023 France Gallery project are welcome! If you have any suggestions, bug fixes, or new features to propose, feel free to submit a pull request or open an issue on GitHub.
 
-## Learn More
+## Credits
+- Created by Chris Coutts
+- Built with Next.js
+- Special thanks to my friend for taking most of the pictures
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Dependencies
+- GSAP
+- Framer Motion
+- Locomotive Scroll
