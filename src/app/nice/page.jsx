@@ -7,7 +7,7 @@ import Vignette from "../components/Vignette/Vignette";
 import Locations from "../components/Locations/Locations";
 import LinkPage from "../components/LinkPage/LinkPage";
 import Footer from "../components/Footer/Footer";
-import Picture1 from "../../../public/assets/images/nice/nice1.jpg";
+import Picture1 from "../../../public/assets/images/nice/nice1.JPG";
 import Picture2 from "../../../public/assets/images/nice/nice2.JPG";
 import Picture3 from "../../../public/assets/images/nice/nice3.JPG";
 import Picture4 from "../../../public/assets/images/nice/nice4.JPG";

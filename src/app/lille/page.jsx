@@ -6,7 +6,7 @@ import Vignette from "../components/Vignette/Vignette";
 import Locations from "../components/Locations/Locations";
 import LinkPage from "../components/LinkPage/LinkPage";
 import Footer from "../components/Footer/Footer";
-import Picture1 from "../../../public/assets/images/lille/lille1.jpg";
+import Picture1 from "../../../public/assets/images/lille/lille1.JPG";
 import Picture2 from "../../../public/assets/images/lille/lille2.JPG";
 import Picture3 from "../../../public/assets/images/lille/lille5.JPG";
 import Picture4 from "../../../public/assets/images/lille/lille9.JPG";
