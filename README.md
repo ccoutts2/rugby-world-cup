@@ -12,10 +12,9 @@ Disclaimer - this project was not built for mobile use. In every project I've do
 ## Installation
 To set up the project locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/ccoutts2/rugby-world-cup`
-2. Navigate to the project directory: `cd your-project`
-3. Install dependencies: `npm install` or `yarn install`
-4. Start the development server: `npm run dev` or `yarn dev`
-5. Open your web browser and navigate to `http://localhost:3000` to view the gallery.
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Open your web browser and navigate to `http://localhost:3000` to view the gallery.
 
 ## Usage
 Once the project is running locally, you can:
