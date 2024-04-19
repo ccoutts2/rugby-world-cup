@@ -1,42 +1,43 @@
 "use client";
 import React, { useRef } from "react";
 import { useSpring, useTransform, useScroll } from "framer-motion";
+import NavBack from "../components/NavBack/NavBack";
 import ZoomParallax from "../components/ZoomParallax/ZoomParallax";
 import Vignette from "../components/Vignette/Vignette";
 import Locations from "../components/Locations/Locations";
+import LinkPage from "../components/LinkPage/LinkPage";
 import Footer from "../components/Footer/Footer";
-// import Cursor from "../components/Cursor/Cursor";
 import Picture1 from "../../../public/assets/images/paris/paris1.jpg";
-import Picture2 from "../../../public/assets/images/paris/paris2.JPG";
-import Picture3 from "../../../public/assets/images/paris/paris3.JPG";
-import Picture4 from "../../../public/assets/images/paris/paris4.JPG";
+import Picture2 from "../../../public/assets/images/paris/paris10.JPG";
+import Picture3 from "../../../public/assets/images/paris/paris9.JPG";
+import Picture4 from "../../../public/assets/images/paris/paris3.JPG";
 import Picture5 from "../../../public/assets/images/paris/paris5.JPG";
 import Picture6 from "../../../public/assets/images/paris/paris8.JPG";
 
 const images = [
   {
-    title: "Town",
+    title: "Stadium",
     city: "paris",
     srcBackground: "paris4.JPG",
-    srcVignette: "paris1.JPG",
-  },
-  {
-    title: "Sea",
-    city: "paris",
-    srcBackground: "paris7.JPG",
     srcVignette: "paris2.JPG",
   },
   {
-    title: "Stadium",
+    title: "Streets",
     city: "paris",
-    srcBackground: "paris13.JPG",
-    srcVignette: "paris12.JPG",
+    srcBackground: "paris7.JPG",
+    srcVignette: "paris6.JPG",
   },
   {
-    title: "Harbour",
+    title: "Seine",
     city: "paris",
-    srcBackground: "paris3.JPG",
-    srcVignette: "paris6.JPG",
+    srcBackground: "paris12.JPG",
+    srcVignette: "paris13.JPG",
+  },
+  {
+    title: "Sacré Coeur",
+    city: "paris",
+    srcBackground: "paris11.JPG",
+    srcVignette: "paris14.JPG",
   },
 ];
 
@@ -103,6 +104,7 @@ const Page = () => {
 
   return (
     <div onMouseMove={mouseMove}>
+      <NavBack />
       <ZoomParallax
         pictures={pictures}
         scrollYProgress={scrollYProgress}
@@ -120,8 +122,8 @@ const Page = () => {
         );
       })}
       <Locations mousePosition={mousePosition} images={images} />
+      <LinkPage />
       <Footer />
-      {/* <Cursor /> */}
     </div>
   );
 };

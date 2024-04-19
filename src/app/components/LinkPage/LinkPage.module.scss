@@ -1,0 +1,26 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.links {
+  @include flex(row, space-between, stretch);
+
+  .list {
+    @include flex(row, space-around, stretch);
+    width: 100%;
+    list-style: none;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+      color: white;
+
+      li {
+        font-size: 5vh;
+      }
+    }
+  }
+}

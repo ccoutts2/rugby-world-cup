@@ -1,44 +1,16 @@
 "use client";
 import React, { useRef } from "react";
 import { useSpring, useTransform, useScroll } from "framer-motion";
+import NavBack from "../components/NavBack/NavBack";
 import ZoomParallax from "../components/ZoomParallax/ZoomParallax";
-import Vignette from "../components/Vignette/Vignette";
-import Locations from "../components/Locations/Locations";
+import LinkPage from "../components/LinkPage/LinkPage";
 import Footer from "../components/Footer/Footer";
-// import Cursor from "../components/Cursor/Cursor";
 import Picture1 from "../../../public/assets/images/marseille/marseille1.JPEG";
 import Picture2 from "../../../public/assets/images/marseille/marseille2.JPEG";
 import Picture3 from "../../../public/assets/images/marseille/marseille3.JPEG";
 import Picture4 from "../../../public/assets/images/marseille/marseille4.JPEG";
 import Picture5 from "../../../public/assets/images/marseille/marseille5.JPEG";
 import Picture6 from "../../../public/assets/images/marseille/marseille6.JPEG";
-
-// const images = [
-//   {
-//     title: "Town",
-//     city: "marseille",
-//     srcBackground: "marseille4.JPEG",
-//     srcVignette: "marseille1.JPEG",
-//   },
-//   {
-//     title: "Sea",
-//     city: "marseille",
-//     srcBackground: "marseille7.JPEG",
-//     srcVignette: "marseille2.JPEG",
-//   },
-//   {
-//     title: "Stadium",
-//     city: "marseille",
-//     srcBackground: "marseille1.JPEG",
-//     srcVignette: "marseille12.JPEG",
-//   },
-//   {
-//     title: "Harbour",
-//     city: "marseille",
-//     srcBackground: "marseille3.JPEG",
-//     srcVignette: "marseille6.JPEG",
-//   },
-// ];
 
 const Page = () => {
   const container = useRef(null);
@@ -103,25 +75,14 @@ const Page = () => {
 
   return (
     <div onMouseMove={mouseMove}>
+      <NavBack />
       <ZoomParallax
         pictures={pictures}
         scrollYProgress={scrollYProgress}
         container={container}
       />
-      {/* {images.map(({ city, srcBackground, srcVignette }, i) => {
-        return (
-          <Vignette
-            mousePosition={mousePosition}
-            city={city}
-            srcBackground={srcBackground}
-            srcVignette={srcVignette}
-            key={i}
-          />
-        );
-      })} */}
-      {/* <Locations mousePosition={mousePosition} images={images} /> */}
+      <LinkPage />
       <Footer />
-      {/* <Cursor /> */}
     </div>
   );
 };

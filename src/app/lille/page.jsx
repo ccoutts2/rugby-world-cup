@@ -4,39 +4,40 @@ import { useSpring, useTransform, useScroll } from "framer-motion";
 import ZoomParallax from "../components/ZoomParallax/ZoomParallax";
 import Vignette from "../components/Vignette/Vignette";
 import Locations from "../components/Locations/Locations";
+import LinkPage from "../components/LinkPage/LinkPage";
 import Footer from "../components/Footer/Footer";
-// import Cursor from "../components/Cursor/Cursor";
 import Picture1 from "../../../public/assets/images/lille/lille1.jpg";
 import Picture2 from "../../../public/assets/images/lille/lille2.JPG";
-import Picture3 from "../../../public/assets/images/lille/lille3.JPG";
-import Picture4 from "../../../public/assets/images/lille/lille4.JPG";
-import Picture5 from "../../../public/assets/images/lille/lille5.JPG";
+import Picture3 from "../../../public/assets/images/lille/lille5.JPG";
+import Picture4 from "../../../public/assets/images/lille/lille9.JPG";
+import Picture5 from "../../../public/assets/images/lille/lille14.JPG";
 import Picture6 from "../../../public/assets/images/lille/lille8.JPG";
+import NavBack from "../components/NavBack/NavBack";
 
 const images = [
   {
-    title: "Town",
+    title: "Standing Tall",
     city: "lille",
-    srcBackground: "lille4.JPG",
-    srcVignette: "lille1.JPG",
+    srcBackground: "lille1.JPG",
+    srcVignette: "lille4.JPG",
   },
   {
-    title: "Sea",
+    title: "Fans",
     city: "lille",
     srcBackground: "lille7.JPG",
-    srcVignette: "lille2.JPG",
+    srcVignette: "lille11.JPG",
   },
   {
     title: "Stadium",
     city: "lille",
-    srcBackground: "lille13.JPG",
-    srcVignette: "lille12.JPG",
+    srcBackground: "lille12.JPG",
+    srcVignette: "lille5.JPG",
   },
   {
-    title: "Harbour",
+    title: "Streets",
     city: "lille",
     srcBackground: "lille3.JPG",
-    srcVignette: "lille6.JPG",
+    srcVignette: "lille13.JPG",
   },
 ];
 
@@ -103,6 +104,7 @@ const Page = () => {
 
   return (
     <div onMouseMove={mouseMove}>
+      <NavBack />
       <ZoomParallax
         pictures={pictures}
         scrollYProgress={scrollYProgress}
@@ -120,8 +122,8 @@ const Page = () => {
         );
       })}
       <Locations mousePosition={mousePosition} images={images} />
+      <LinkPage />
       <Footer />
-      {/* <Cursor /> */}
     </div>
   );
 };

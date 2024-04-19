@@ -14,13 +14,8 @@ const Footer = () => {
         </div>
 
         <div className={styles.introLine}>
-          <p>software</p>
-          <p>&</p>
-        </div>
-
-        <div className={styles.introLine}>
           <p>creative</p>
-          <p>dev</p>
+          <p>developer</p>
         </div>
 
         <Link className={styles.link} href="mailto:chris.dcoutts@gmail.com">

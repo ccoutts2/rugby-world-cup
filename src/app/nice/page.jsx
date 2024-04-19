@@ -1,11 +1,12 @@
 "use client";
 import React, { useRef } from "react";
 import { useSpring, useTransform, useScroll } from "framer-motion";
+import NavBack from "../components/NavBack/NavBack";
 import ZoomParallax from "../components/ZoomParallax/ZoomParallax";
 import Vignette from "../components/Vignette/Vignette";
 import Locations from "../components/Locations/Locations";
+import LinkPage from "../components/LinkPage/LinkPage";
 import Footer from "../components/Footer/Footer";
-// import Cursor from "../components/Cursor/Cursor";
 import Picture1 from "../../../public/assets/images/nice/nice1.jpg";
 import Picture2 from "../../../public/assets/images/nice/nice2.JPG";
 import Picture3 from "../../../public/assets/images/nice/nice3.JPG";
@@ -103,6 +104,7 @@ const Page = () => {
 
   return (
     <div onMouseMove={mouseMove}>
+      <NavBack />
       <ZoomParallax
         pictures={pictures}
         scrollYProgress={scrollYProgress}
@@ -120,8 +122,8 @@ const Page = () => {
         );
       })}
       <Locations mousePosition={mousePosition} images={images} />
+      <LinkPage />
       <Footer />
-      {/* <Cursor /> */}
     </div>
   );
 };
