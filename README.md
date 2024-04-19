@@ -7,7 +7,7 @@ Disclaimer - this project was not built for mobile use. In every project I've do
 
 ## Features
 - **Image Gallery:** Explore a curated selection of photographs capturing memorable moments from the Rugby World Cup 2023 in France.
-- **Immersive Experience:** Users can immerse themselves in the photos with sclaing and a vignette animation. Get a feel for what I witnessed, through the selection of photos.
+- **Immersive Experience:** Users can immerse themselves in the photos with scaling and vignette animations. Get a feel for what I witnessed, through the selection of photos.
 
 ## Installation
 To set up the project locally, follow these steps:
