@@ -1,10 +1,47 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
 .description {
   position: relative;
   color: white;
   font-size: 3vw;
   text-transform: uppercase;
-  margin-top: 30vw;
+  margin-top: 55vh;
   margin-left: 10vw;
+
+  @include tablet {
+    margin-top: 83vh;
+  }
+
+  @include desktop {
+    margin-top: 30vw;
+  }
 
   p {
     margin: 0px;

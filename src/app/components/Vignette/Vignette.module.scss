@@ -1,3 +1,18 @@
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
 .gallery {
   height: 120vh;
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
@@ -15,12 +30,17 @@
   }
 
   .vignette {
-    height: 40vh;
-    width: 20vw;
+    height: 30vh;
+    width: 45vw;
     position: fixed;
     top: 0;
     border-radius: 1.5vw;
     overflow: hidden;
+
+    @include desktop {
+      height: 40vh;
+      width: 20vw;
+    }
 
     img {
       width: 100%;

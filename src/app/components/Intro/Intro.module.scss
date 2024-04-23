@@ -5,6 +5,28 @@
   align-items: $align;
 }
 
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
 .introContainer {
   position: relative;
   width: 100%;
@@ -12,12 +34,20 @@
 
   .backgroundImage {
     width: 100%;
-    height: 140vh;
+    height: 100vh;
     position: absolute;
     filter: brightness(60%);
 
     img {
       object-fit: cover;
+    }
+
+    @include tablet {
+      height: 100vh;
+    }
+
+    @include desktop {
+      height: 140vh;
     }
   }
 
@@ -28,13 +58,23 @@
 
     .introImage {
       filter: brightness(70%);
-      width: 350px;
-      height: 475px;
+      width: 10rem;
+      height: 15rem;
       position: absolute;
 
       img {
         object-fit: cover;
         object-position: top;
+      }
+
+      @include tablet {
+        width: 15rem;
+        height: 17rem;
+      }
+
+      @include desktop {
+        width: 21rem;
+        height: 29.68rem;
       }
     }
 
