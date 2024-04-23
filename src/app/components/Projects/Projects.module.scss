@@ -5,18 +5,41 @@
   align-items: $align;
 }
 
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
 .projects {
   @include flex(column, center, center);
-  margin-top: 25vh;
+  margin-top: 20vh;
   color: white;
   padding: 5%;
 
   .projectDescription {
     @include flex(row, space-between, stretch);
-    height: 70vh;
+    height: 20vh;
     gap: 5%;
     width: 100%;
     cursor: default;
+
+    @include tablet {
+      height: 30vh;
+    }
+
+    @include desktop {
+      height: 70vh;
+    }
 
     .imageContainer {
       position: relative;
@@ -41,9 +64,13 @@
   }
 
   .projectList {
-    margin-top: 12rem;
+    margin-top: 5rem;
     @include flex(column, center, center);
     width: 100%;
+
+    @include desktop {
+      margin-top: 12rem;
+    }
 
     .projectEl {
       border-top: 1px solid white;

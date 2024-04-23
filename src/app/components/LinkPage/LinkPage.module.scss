@@ -5,6 +5,21 @@
   align-items: $align;
 }
 
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
 .links {
   @include flex(row, space-between, stretch);
 
@@ -19,7 +34,11 @@
       color: white;
 
       li {
-        font-size: 5vh;
+        font-size: 3vh;
+
+        @include desktop {
+          font-size: 5vh;
+        }
       }
     }
   }

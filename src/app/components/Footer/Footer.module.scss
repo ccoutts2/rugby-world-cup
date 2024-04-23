@@ -5,13 +5,42 @@
   align-items: $align;
 }
 
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
 .footer {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 4.5vh;
+  margin-bottom: 4.5vh;
   height: 40vh;
   @include flex(row, center, center);
-  border-top: 1vh solid white;
+  border-top: 5px solid white;
   padding-top: 10vh;
+
+  @include desktop {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-top: 0.7vh solid white;
+    padding-top: 10vh;
+  }
+
+  @include desktop {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-top: 1vh solid white;
+    padding-top: 10vh;
+  }
 
   .body {
     width: 39%;
@@ -28,8 +57,12 @@
       }
 
       &:nth-of-type(2) {
-        right: -20px;
+        right: -6px;
         position: relative;
+
+        @include desktop {
+          right: -20px;
+        }
       }
 
       &:nth-of-type(3),
@@ -38,8 +71,12 @@
       }
 
       &:nth-of-type(4) {
-        right: -33px;
+        right: -9px;
         position: relative;
+
+        @include desktop {
+          right: -33px;
+        }
       }
     }
 
